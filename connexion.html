@@ -13,27 +13,28 @@
 
 <body>
     <div class="container">
-        <form>
+        <form method="link" action="index.html">
             <br>
             <div class="row justify-content-md-center">
                 <div class="col-sm-3">
                     <label for="email" class="form-label">Adresse mail :</label>
-                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                    <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" class="form-control" id="email" placeholder="Entrer un mail">
                 </div>
             </div>
             <div class="row justify-content-md-center">
                 <div class="col-sm-3">
                     <label for="password" class="form-label">Mot de passe :</label>
-                    <input type="password" class="form-control" id="password">
+                    <input type="password" class="form-control" id="password" pattern=".[a-zA-Z0-9]{6,}" placeholder="Mot de passe">
                 </div>
             </div>
             <br>
             <div class="row justify-content-md-center">
                 <div class="col-sm-1">
-                    <a class="btn btn-primary" href="index.html" role="button">Envoyer</a>
+                    <button type="submit" class="btn btn-primary">Connexion</button>
                 </div>
             </div>
         </form>
+
     </div>
 </body>
 
