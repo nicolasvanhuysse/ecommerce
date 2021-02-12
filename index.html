@@ -17,15 +17,22 @@
 
 <body>
 
+    <br>
 
     <ul class="nav justify-content-center">
         <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+            <a class="nav-link active nav" aria-current="page" href="#">Accueil</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="connexion.html">Déconnexion</a>
+            <a class="nav-link nav" href="connexion.html">Déconnexion</a>
         </li>
     </ul>
+
+    <br>
+
+    <div class="row justify-content-center">
+        <a class="btn btn-primary bouton" data-toggle="modal" data-target="#modalAdd">Ajouter un produit</a>
+    </div>
 
     <br>
 
@@ -80,12 +87,6 @@
             </tr>
         </tbody>
     </table>
-
-    <div class="row justify-content-md-center">
-        <div class="col-sm-1">
-            <a class="btn btn-primary" data-toggle="modal" data-target="#modalAdd">Ajouter un produit</a>
-        </div>
-    </div>
 
     <!-- Modal Ajouter -->
     <div class="modal fade" id="modalAdd" tabindex="-1" role="dialog" aria-labelledby="modalAdd" aria-hidden="true">
